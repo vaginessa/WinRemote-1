@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="t90.winremote.getIP">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Establishing Connection..."
+        android:id="@+id/textView"
+        android:layout_weight="1"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/scanFrame">
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="eu.livotov.zxscan.ScannerView"
+            android:id="@+id/scanner"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start the application on your windows machine and scan the QR that appears, and we'll take care of the rest."
+        android:id="@+id/textView2"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="25dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
